@@ -1,0 +1,8 @@
+$doc = $(document)
+
+$doc.on 'click', '.envelope', ->
+  $(this).toggleClass 'open'
+  
+###$doc.on 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', '.open .flap-outside', ->
+  $(this).css
+    'z-index': 0###
