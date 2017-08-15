@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <title>Daily Struggle Meme Generator</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <style>
         body{
-            font-family: sans-serif;
+            font-family: sofia;
         }
         .hidden {
             display: none;
@@ -112,14 +113,14 @@
             ctx.textAlign = "center";
 
             // left text
-            ctx.font = leftText.size+"px Impact";
+            ctx.font = leftText.size+"px sofia";
             ctx.save();
             ctx.rotate(leftText.rotation * Math.PI/180);
             ctx.wrapText(buttonTextLeft.value, canvas.width * leftText.x, canvas.height * leftText.y, canvas.width * leftText.width, leftText.size);
             ctx.restore();
             
             // right text
-            ctx.font = rightText.size+"px Impact";
+            ctx.font = rightText.size+"px sofia";
             ctx.save();
             ctx.rotate(rightText.rotation * Math.PI/180);
             ctx.wrapText(buttonTextRight.value, canvas.width * rightText.x, canvas.height * rightText.y, canvas.width * rightText.width, rightText.size);
