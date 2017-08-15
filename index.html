@@ -2,53 +2,46 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>wedding invitation .png Generator</title>
     <!-- favicon
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     -->
+	
+	<!-- google font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     
-    
-    <style>
-        body{
-            font-family: sans-serif;
-        }
-        .hidden {
-            display: none;
-        }
-
-        .container{
-            margin: 0 auto;
-        }
-
-        .inputs{
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-        }
-
-        .container canvas{
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    <!-- bootstrap 3.3.7 -->
+	
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
 </head>
 
 <body>
     <div class="container">
-        <div class="inputs">
-            <label>Left button:<br><textarea class="buttonText left">Galih dan Ratna</textarea></label>
-            <label>Right button:<br><textarea class="buttonText right">12-12-2021</textarea></label>
+	  <form class="form-inline">
+        <div class="form-group">
+            <label>Mempelai:<br><textarea class="buttonText left">Galih dan Ratna</textarea></label>
         </div>
+        <div class="form-group">
+            <label>Tanggal Resepsi:<br><textarea class="buttonText right">12-12-2021</textarea></label>
+        </div>
+	  </form>
+	</div>
+	<div class="container">
         <canvas>
             <p>Your browser doesn't support the HTML5 canvas!</p>
         </canvas>
-        <div>
-            <p>Right-click copy-paste image to Imgur, etc... or <a class="downloadButton" href="#"><button>Download as png</button></a></p>
-            </p>
-        </div>
+	</div>
+    <div class="container">
+        <p>Right-click copy-paste image to Imgur, etc... or <a class="downloadButton" href="#"><button class="btn btn-primary" type="submit">Download as png</button></a></p>
+    </div>
         <div class="ie" style="visibility:hidden">
-            <strong>Internet Explorer and Edge can not save HTML5 canvas as an image. Use the snipping tool and do it manually.</strong>
+            <strong>Internet Explorer and Edge can not save HTML5 canvas as an image. Use the snipping tool and do it manually, Right-click Save Image As....</strong>
         </div>
         <script>
             if(document.documentMode || /Edge/.test(navigator.userAgent)){
@@ -115,7 +108,7 @@
             ctx.textAlign = "center";
 
             // left text
-            ctx.font = leftText.size+"px Impact";
+            ctx.font = leftText.size+"px pacifico";
             ctx.save();
             ctx.rotate(leftText.rotation * Math.PI/180);
             ctx.wrapText(buttonTextLeft.value, canvas.width * leftText.x, canvas.height * leftText.y, canvas.width * leftText.width, leftText.size);
