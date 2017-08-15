@@ -37,7 +37,7 @@
 <body>
     <div class="container">
         <div class="inputs">
-            <label>Left button:<br><textarea class="buttonText left">Galih<br>dan<br>ratna</textarea></label>
+            <label>Left button:<br><textarea class="buttonText left">Galih dan Ratna</textarea></label>
             <label>Right button:<br><textarea class="buttonText right">12-12-2021</textarea></label>
         </div>
         <canvas>
@@ -84,7 +84,7 @@
             rotation: 0,
             width: 0.20,
             x: 0.45,
-            y: 0.70
+            y: 0.75
         };
 
         templateImage.onload = function(){
@@ -100,7 +100,7 @@
                 combinedString += String(v).replace(/\s/g, '');
             });
             var dataUrl = canvas.toDataURL('image/png');
-            downloadButton.download = 'dailystruggle-'+combinedString;
+            downloadButton.download = 'forsale.id-'+combinedString;
             downloadButton.href = canvas.toDataURL('image/png');
         });
 
