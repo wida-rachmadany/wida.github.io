@@ -4,30 +4,69 @@
     <meta name="generator"
     content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
     <title>Invitation Generator | forsale.id</title>
-    <link rel="stylesheet" type="text/css" href="styles/theme.css" />
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="utf-8" http-equiv="encoding" />
-	
-	<!-- google font -->
-	<link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet"> 
-	
-	
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" />
+    <!-- bulma.io - css ramework -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" />
+    <!-- stylesheet -->
+    <style>
+        /*
+  Importing fonts
+*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+
+
+canvas {
+  position: absolute;
+  margin: 10px auto;
+  box-shadow: 0 0 1px inset;
+  width: 100%;
+}
+
+#banner_background {
+  z-index: 0;
+}
+
+#banner {
+  z-index: 1;
+}
+
+</style>
   </head>
   <body>
-  <h1>Invitation Generator</h1>
-  <span class="note">Fill up the informations and download your banner:</span>
-  <br />
-  <br />
-  <div class="form">
-  <input type="text" id="banner_heading" placeholder="Wida dan Isa" /> 
-  <input type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" /> 
-  <input type="button" id="preview" value="Apply Text" /> 
-  <a id="download">
-    <button type="button">Download</button>
-  </a></div>
-  <canvas id="banner_background" height="946px" width="1004px"></canvas> 
-  <canvas id="banner" height="946px" width="1004px"></canvas> 
-  <script>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Invitation Generator</h1>
+          <h2 class="subtitle">Fill up the informations and download your banner:</h2>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+        <div class="field">
+          <div class="control">
+          <input type="text" id="banner_heading" placeholder="Wida dan Isa" /> 
+          <input type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" /></div>
+        </div>
+        <input type="button" id="preview" value="Apply Text" class="button is-primary" /> 
+        <a id="download">
+          <button type="button" class="button is-success">Download</button>
+        </a></div>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+        <canvas id="banner_background" height="946px" width="1004px"></canvas> 
+        <canvas id="banner" height="946px" width="1004px"></canvas></div>
+      </div>
+    </section>
+    <script>
  
         
 //lets set the maximum length for the headline.
@@ -78,5 +117,6 @@ downloadButton.addEventListener("click", function(){
         
         
         
-</script></body>
+</script>
+  </body>
 </html>
