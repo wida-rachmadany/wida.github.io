@@ -19,9 +19,6 @@
         
         @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
         canvas {
-            position: absolute;
-            margin: 10px auto;
-            box-shadow: 0 0 1px inset;
             width: 100%;
         }
         
@@ -31,6 +28,7 @@
         
         #banner {
             z-index: 1;
+            display: none;
         }
     </style>
 </head>
@@ -58,27 +56,34 @@
             </div>
         </div>
     </section>
+
     <section class="hero">
         <div class="hero-body">
             <div class="container">
-                <div class="field">
-                    <div class="control">
-                        <input type="text" id="banner_heading" placeholder="Wida dan Isa" />
-                        <input type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" />
+                <div class="columns">
+                    <div class="column is-4">
+                        <h1 class="title">Input Data</h1>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium" type="text" id="banner_heading" placeholder="Wida dan Isa" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium" type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" />
+                            </div>
+                        </div>
+                        <input type="button" id="preview" value="Apply Text" class="button is-primary" />
+                        <a id="download">
+                            <button type="button" class="button is-success">Download</button>
+                        </a>
+                    </div>
+                    <div class="column">
+                        <h1 class="title">Preview Pane</h1>
+                        <canvas id="banner_background" height="946px" width="1004px"></canvas>
+                        <canvas id="banner" height="946px" width="1004px"></canvas>
                     </div>
                 </div>
-                <input type="button" id="preview" value="Apply Text" class="button is-primary" />
-                <a id="download">
-                    <button type="button" class="button is-success">Download</button>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container">
-                <canvas id="banner_background" height="946px" width="1004px"></canvas>
-                <canvas id="banner" height="946px" width="1004px"></canvas>
             </div>
         </div>
     </section>
