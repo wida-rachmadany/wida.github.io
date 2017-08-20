@@ -64,14 +64,25 @@
                     <div class="column is-4">
                         <h1 class="title">Input Data</h1>
                         <div class="field">
+							<label class="label">Nama Mempelai</label>
                             <div class="control">
                                 <input class="input is-medium" type="text" id="banner_heading" placeholder="Wida dan Isa" />
                             </div>
+							<p class="help">Contoh: Wida & Ninik</p>
                         </div>
                         <div class="field">
+							<label class="label">Waktu Resepsi</label>
                             <div class="control">
                                 <input class="input is-medium" type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" />
                             </div>
+							<p class="help">Contoh: Kamis, 17 Agustus 2017</p>
+                        </div>
+						<div class="field">
+							<label class="label">Lokasi Resepsi</label>
+                            <div class="control">
+                                <textarea class="textarea is-medium" placeholder="Textarea" id="banner_subheading1"></textarea>
+                            </div>
+							<p class="help">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
                         </div>
                         <input type="button" id="preview" value="Apply Text" class="button is-primary" />
                         <a id="download">
@@ -91,7 +102,8 @@
     <script>
         //lets set the maximum length for the headline.
         document.getElementById("banner_heading").setAttribute("maxlength", "32");
-        document.getElementById("banner_subheading").setAttribute("maxlength", "32");
+        document.getElementById("banner_subheading").setAttribute("maxlength", "40");
+        document.getElementById("banner_subheading1").setAttribute("maxlength", "45");
         //now taking care of the canvases. firstly the background layer;
         var background = document.getElementById("banner_background");
         background_ctx = background.getContext("2d");
@@ -111,6 +123,8 @@
             textLayer_ctx.fillText(document.getElementById("banner_heading").value, textLayer.width / 2, textLayer.height / 1.65);
             textLayer_ctx.font = "300 200% Open Sans";
             textLayer_ctx.fillText(document.getElementById("banner_subheading").value, textLayer.width / 2, textLayer.height / 1.5);
+            textLayer_ctx.font = "300 200% Open Sans";
+            textLayer_ctx.fillText(document.getElementById("banner_subheading1").value, textLayer.width / 2, textLayer.height / 1.4);
             //now drwaing the textLayer canvas into the background canvas
             background_ctx.drawImage(textLayer, 0, 0, background.width, background.height);
         }
@@ -133,6 +147,8 @@
             previewBanner(); //downloading gets the exact current state by this;
             downloadImage(this, background, "forsaleID-digital-invitation.png");
         });
+		
+			
     </script>
 </body>
 
