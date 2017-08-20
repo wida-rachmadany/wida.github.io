@@ -19,7 +19,10 @@
         
         @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
         canvas {
+            max-height: 473px;
+            max-width: 502px;
             width: 100%;
+            height: 100%;
         }
         
         #banner_background {
@@ -39,65 +42,43 @@
         <div class="navbar-brand">
             <a class="navbar-item" href="http://forsale.id"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp;FORSALE.ID
             </a>
-
-            <div class="navbar-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
     </nav>
 
-    <section class="hero is-primary">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">Invitation Generator</h1>
-                <h2 class="subtitle">Fill up the informations and download your invitation</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="hero">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-4">
-                        <h1 class="title">Input Data</h1>
-                        <div class="field">
-							<label class="label">Nama Mempelai</label>
-                            <div class="control">
-                                <input class="input is-medium" type="text" id="banner_heading" placeholder="Wida dan Isa" />
-                            </div>
-							<p class="help">Contoh: Wida & Ninik</p>
-                        </div>
-                        <div class="field">
-							<label class="label">Waktu Resepsi</label>
-                            <div class="control">
-                                <input class="input is-medium" type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" />
-                            </div>
-							<p class="help">Contoh: Kamis, 17 Agustus 2017</p>
-                        </div>
-						<div class="field">
-							<label class="label">Lokasi Resepsi</label>
-                            <div class="control">
-                                <textarea class="textarea is-medium" placeholder="Textarea" id="banner_subheading1"></textarea>
-                            </div>
-							<p class="help">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
-                        </div>
-                        <input type="button" id="preview" value="Apply Text" class="button is-primary" />
-                        <a id="download">
-                            <button type="button" class="button is-success">Download</button>
-                        </a>
-                    </div>
-                    <div class="column">
-                        <h1 class="title">Preview Pane</h1>
-                        <canvas id="banner_background" height="946px" width="1004px"></canvas>
-                        <canvas id="banner" height="946px" width="1004px"></canvas>
-                    </div>
+    <div class="columns">
+        <div class="column is-3" style="height: 500px; overflow-y: scroll;">
+            <div class="field">
+                <label class="label">Nama Mempelai</label>
+                <div class="control">
+                    <input class="input is-medium" type="text" id="banner_heading" placeholder="Wida dan Ninik" />
                 </div>
+                <p class="help">Contoh: Wida & Ninik</p>
             </div>
+            <div class="field">
+                <label class="label">Waktu Resepsi</label>
+                <div class="control">
+                    <input class="input is-medium" type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017" />
+                </div>
+                <p class="help">Contoh: Kamis, 17 Agustus 2017</p>
+            </div>
+            <div class="field">
+                <label class="label">Lokasi Resepsi</label>
+                <div class="control">
+                    <textarea class="textarea is-medium" placeholder="Textarea" id="banner_subheading1"></textarea>
+                </div>
+                <p class="help">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
+            </div>
+            <input type="button" id="preview" value="Apply Text" class="button is-primary" />
+            <a id="download">
+                <button type="button" class="button is-success">Download</button>
+            </a>
         </div>
-    </section>
+        <div class="column">
+            <canvas id="banner_background" height="946px" width="1004px"></canvas>
+            <canvas id="banner" height="946px" width="1004px"></canvas>
+        </div>
+    </div>
+    </div>
 
     <script>
         //lets set the maximum length for the headline.
@@ -147,8 +128,6 @@
             previewBanner(); //downloading gets the exact current state by this;
             downloadImage(this, background, "forsaleID-digital-invitation.png");
         });
-		
-			
     </script>
 </body>
 
