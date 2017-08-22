@@ -8,8 +8,9 @@
     <meta name="description" content="Undangan Pernikahan Pernikahan Digital adalah undangan berbetuk digital. Tamu bisa melihat undangan digital berbentuk website, .PNG atau Video melalui PC, Laptop, Tablet dan Smartphone. Penyebaran Undangan bisa melalui media sosial dan aplikai chat." />
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>FREE undangan digital - forsale.id</title>
+    <title>Free undangan digital ForSale.id</title>
 
     <style>
         /*
@@ -18,8 +19,8 @@
         
         @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
         canvas {
-            max-height: 473px;
-            max-width: 502px;
+            max-height: 500px;
+            max-width: 1000px;
             width: 100%;
             height: 100%;
         }
@@ -67,7 +68,7 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">ForSale.id</a>
+                <a class="navbar-brand" href="http://www.forsale.id">ForSale.id</a>
             </div>
         </div>
     </nav>
@@ -75,46 +76,94 @@
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-3" style="height: 500px; overflow-y: scroll;">
+            <div class="col-md-4" style="height: 500px; overflow-y: scroll;">
 				<form>
 				<fieldset class="border">
 				<legend class="border">Nama</legend>
                 <div class="form-group">
-                    <label>Nama Mempelai</label>
-                        <input class="form-control" type="text" id="banner_heading" placeholder="Wida dan Ninik" />
-                    <p class="help-block">Contoh: Wida & Ninik</p>
+                    <label>Pria</label>
+                        <input class="form-control" type="text" id="banner_1" placeholder="Wida" />
+                    <p class="help-block">Contoh: Wida</p>
+                </div>
+                <div class="form-group">
+                    <label>Wanita</label>
+                        <input class="form-control" type="text" id="banner_1A" placeholder="Ninik" />
+                    <p class="help-block">Contoh: Ninik</p>
+                </div>
+				</fieldset>
+				<fieldset class="border">
+				<legend class="border">Akad</legend>
+                <div class="form-group">
+                    <label>Hari</label>
+                        <input class="form-control" type="text" id="banner_2" placeholder="Sabtu" />
+                    <p class="help-block">Contoh: Sabtu</p>
+                </div>
+				<div class="form-group">
+                    <label>Tanggal</label>
+                        <input class="form-control" type="text" id="banner_3" placeholder="26 Agustus 2017" />
+                    <p class="help-block">Contoh: 26 Agustus 2017</p>
+                </div>
+				<div class="form-group">
+                    <label>Pukul</label>
+                        <input class="form-control" type="text" id="banner_4" placeholder="10.00 - SELESAI" />
+                    <p class="help-block">Contoh: 10.00 - SELESAI</p>
+                </div>
+                <div class="form-group">
+                    <label>Lokasi Resepsi</label>
+                        <textarea class="form-control" placeholder="Textarea" id="banner_5"></textarea>
+                    <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
                 </div>
 				</fieldset>
 				<fieldset class="border">
 				<legend class="border">Resepsi</legend>
                 <div class="form-group">
-                    <label>Waktu Resepsi</label>
-                        <input class="form-control" type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017 | 15.00 WIB" />
-                    <p class="help-block">Contoh: Kamis, 17 Agustus 2017 | 15.00 WIB</p>
+                    <label>Hari</label>
+                        <input class="form-control" type="text" id="banner_6" placeholder="Sabtu" />
+                    <p class="help-block">Contoh: Sabtu</p>
+                </div>
+				<div class="form-group">
+                    <label>Tanggal</label>
+                        <input class="form-control" type="text" id="banner_7" placeholder="26 Agustus 2017" />
+                    <p class="help-block">Contoh: 26 Agustus 2017</p>
+                </div>
+				<div class="form-group">
+                    <label>Pukul</label>
+                        <input class="form-control" type="text" id="banner_8" placeholder="10.00 - SELESAI" />
+                    <p class="help-block">Contoh: 10.00 - SELESAI</p>
                 </div>
                 <div class="form-group">
                     <label>Lokasi Resepsi</label>
-                        <textarea class="form-control" placeholder="Textarea" id="banner_subheading1"></textarea>
+                        <textarea class="form-control" placeholder="Textarea" id="banner_9"></textarea>
                     <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
                 </div>
 				</fieldset>
+				<fieldset class="border">
+				<legend class="border">Submit</legend>
 				<button type="button" class="btn btn-success" id="preview">Apply Text</button>
 				<a id="download">
 				<button type="button" class="btn btn-primary">Download</button></a>
+				</fieldset>
 				</form>
             </div>
             <div class="col-md-8">
-                <canvas id="banner_background" height="946px" width="1004px"></canvas>
-                <canvas id="banner" height="946px" width="1004px"></canvas>
+                <canvas id="banner_background" height="853px" width="1280px"></canvas>
+                <canvas id="banner" height="853px" width="1280px"></canvas>
             </div>
         </div>
     </div>
 
     <script>
         //lets set the maximum length for the headline.
-        document.getElementById("banner_heading").setAttribute("maxlength", "32");
-        document.getElementById("banner_subheading").setAttribute("maxlength", "40");
-        document.getElementById("banner_subheading1").setAttribute("maxlength", "45");
+        document.getElementById("banner_1").setAttribute("maxlength", "20");
+        document.getElementById("banner_1A").setAttribute("maxlength", "20");
+        document.getElementById("banner_2").setAttribute("maxlength", "7");
+        document.getElementById("banner_3").setAttribute("maxlength", "17");
+        document.getElementById("banner_4").setAttribute("maxlength", "21");
+        document.getElementById("banner_5").setAttribute("maxlength", "45");
+        document.getElementById("banner_6").setAttribute("maxlength", "7");
+        document.getElementById("banner_7").setAttribute("maxlength", "17");
+        document.getElementById("banner_8").setAttribute("maxlength", "21");
+        document.getElementById("banner_9").setAttribute("maxlength", "45");
         //now taking care of the canvases. firstly the background layer;
         var background = document.getElementById("banner_background");
         background_ctx = background.getContext("2d");
@@ -123,19 +172,34 @@
         textLayer_ctx = textLayer.getContext("2d");
         //lets create an image element;
         var backgroundImage = new Image(background.width, background.height);
-        backgroundImage.src = '20231-NSLTKO.png';
+        backgroundImage.src = 'vintage-boards-1557993_1280_1.jpg';
         //function that generates the banner preview from user input text;
         function previewBanner() {
             background_ctx.clearRect(0, 0, background.width, background.height); //      Clearing both layers
             textLayer_ctx.clearRect(0, 0, textLayer.width, textLayer.height); //           before preview
             background_ctx.drawImage(backgroundImage, 0, 0, background.width, background.height);
             textLayer_ctx.textAlign = "center";
-            textLayer_ctx.font = "300 350% Parisienne";
-            textLayer_ctx.fillText(document.getElementById("banner_heading").value, textLayer.width / 2, textLayer.height / 1.65);
-            textLayer_ctx.font = "300 200% Open Sans";
-            textLayer_ctx.fillText(document.getElementById("banner_subheading").value, textLayer.width / 2, textLayer.height / 1.5);
-            textLayer_ctx.font = "300 200% Open Sans";
-            textLayer_ctx.fillText(document.getElementById("banner_subheading1").value, textLayer.width / 2, textLayer.height / 1.4);
+			textLayer_ctx.fillStyle = "#ffffff";
+            textLayer_ctx.font = "300 600% Parisienne";
+            textLayer_ctx.fillText(document.getElementById("banner_1").value, textLayer.width / 2.25, textLayer.height / 3.25);
+            textLayer_ctx.font = "300 600% Parisienne";
+            textLayer_ctx.fillText(document.getElementById("banner_1A").value, textLayer.width / 1.7, textLayer.height / 2.3);
+            textLayer_ctx.font = "300 500% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_2").value, textLayer.width / 3.5, textLayer.height / 1.55);
+            textLayer_ctx.font = "300 300% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_3").value, textLayer.width / 3.5, textLayer.height / 1.4);
+            textLayer_ctx.font = "300 300% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_4").value, textLayer.width / 3.5, textLayer.height / 1.28);
+            textLayer_ctx.font = "300 200% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_5").value, textLayer.width / 3.5, textLayer.height / 1.2);
+            textLayer_ctx.font = "300 500% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_6").value, textLayer.width / 1.375, textLayer.height / 1.55);
+            textLayer_ctx.font = "300 300% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_7").value, textLayer.width / 1.375, textLayer.height / 1.4);
+            textLayer_ctx.font = "300 300% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_8").value, textLayer.width / 1.375, textLayer.height / 1.28);
+            textLayer_ctx.font = "300 200% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_9").value, textLayer.width / 1.375, textLayer.height / 1.2);
             //now drwaing the textLayer canvas into the background canvas
             background_ctx.drawImage(textLayer, 0, 0, background.width, background.height);
         }
