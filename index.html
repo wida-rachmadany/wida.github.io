@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Buat Gratis Undangan Pernikahan Digital Anda denga format .PNG. Penyebaran Undangan bisa melalui media sosial dan aplikai chat." />
+    <meta name="description" content="Undangan Pernikahan Pernikahan Digital adalah undangan berbetuk digital. Tamu bisa melihat undangan digital berbentuk website, .PNG atau Video melalui PC, Laptop, Tablet dan Smartphone. Penyebaran Undangan bisa melalui media sosial dan aplikai chat." />
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ForSale.id - FREE undangan digital</title>
+    <title>Bootstrap 101 Template</title>
 
     <style>
         /*
@@ -32,6 +32,19 @@
             z-index: 1;
             display: none;
         }
+		
+		fieldset.border {
+		border: solid 1px #DDD !important;
+		padding: 0 10px 10px 10px;
+		border-bottom: none;
+		}
+
+		legend.border {
+		width:inherit; /* Or auto */
+		padding:0 10px; /* To give a bit of padding on the left and right */
+		border-bottom:none;
+		}
+		
     </style>
 
     <!-- Bootstrap -->
@@ -64,11 +77,16 @@
         <div class="row">
             <div class="col-md-3" style="height: 500px; overflow-y: scroll;">
 				<form>
+				<fieldset class="border">
+				<legend class="border">Nama</legend>
                 <div class="form-group">
                     <label>Nama Mempelai</label>
                         <input class="form-control" type="text" id="banner_heading" placeholder="Wida dan Ninik" />
                     <p class="help-block">Contoh: Wida & Ninik</p>
                 </div>
+				</fieldset>
+				<fieldset class="border">
+				<legend class="border">Resepsi</legend>
                 <div class="form-group">
                     <label>Waktu Resepsi</label>
                         <input class="form-control" type="text" id="banner_subheading" placeholder="Kamis, 17 Agustus 2017 | 15.00 WIB" />
@@ -79,6 +97,7 @@
                         <textarea class="form-control" placeholder="Textarea" id="banner_subheading1"></textarea>
                     <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
                 </div>
+				</fieldset>
 				<button type="button" class="btn btn-success" id="preview">Apply Text</button>
 				<a id="download">
 				<button type="button" class="btn btn-primary">Download</button></a>
