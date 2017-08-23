@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Undangan Pernikahan Pernikahan Digital adalah undangan berbetuk digital. Tamu bisa melihat undangan digital berbentuk website, .PNG atau Video melalui PC, Laptop, Tablet dan Smartphone. Penyebaran Undangan bisa melalui media sosial dan aplikai chat." />
+    <meta name="description" content="Free Undangan Pernikahan Digital yang bisa di-download dalam format .PNG. Penyebaran Undangan bisa melalui media sosial dan aplikai chat." />
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight" rel="stylesheet"/>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Free undangan digital ForSale.id</title>
 
@@ -19,8 +20,8 @@
         
         @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
         canvas {
-            max-height: 500px;
-            max-width: 1000px;
+            max-height: 576px;
+            max-width: 1024px;
             width: 100%;
             height: 100%;
         }
@@ -33,19 +34,237 @@
             z-index: 1;
             display: none;
         }
-		
-		fieldset.border {
-		border: solid 1px #DDD !important;
-		padding: 0 10px 10px 10px;
-		border-bottom: none;
-		}
-
-		legend.border {
-		width:inherit; /* Or auto */
-		padding:0 10px; /* To give a bit of padding on the left and right */
-		border-bottom:none;
-		}
-		
+        
+        fieldset.border {
+            border: solid 1px #DDD !important;
+            padding: 0 10px 10px 10px;
+            border-bottom: none;
+        }
+        
+        legend.border {
+            width: inherit;
+            /* Or auto */
+            padding: 0 10px;
+            /* To give a bit of padding on the left and right */
+            border-bottom: none;
+        }
+        
+        .resp-sharing-button__link,
+        .resp-sharing-button__icon {
+            display: inline-block
+        }
+        
+        .resp-sharing-button__link {
+            text-decoration: none;
+            color: #fff;
+            margin: 0.5em
+        }
+        
+        .resp-sharing-button {
+            border-radius: 5px;
+            transition: 25ms ease-out;
+            padding: 0.5em 0.75em;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+        }
+        
+        .resp-sharing-button__icon svg {
+            width: 1em;
+            height: 1em;
+            margin-right: 0.4em;
+            vertical-align: top
+        }
+        
+        .resp-sharing-button--small svg {
+            margin: 0;
+            vertical-align: middle
+        }
+        /* Non solid icons get a stroke */
+        
+        .resp-sharing-button__icon {
+            stroke: #fff;
+            fill: none
+        }
+        /* Solid icons get a fill */
+        
+        .resp-sharing-button__icon--solid,
+        .resp-sharing-button__icon--solidcircle {
+            fill: #fff;
+            stroke: none
+        }
+        
+        .resp-sharing-button--twitter {
+            background-color: #55acee
+        }
+        
+        .resp-sharing-button--twitter:hover {
+            background-color: #2795e9
+        }
+        
+        .resp-sharing-button--pinterest {
+            background-color: #bd081c
+        }
+        
+        .resp-sharing-button--pinterest:hover {
+            background-color: #8c0615
+        }
+        
+        .resp-sharing-button--facebook {
+            background-color: #3b5998
+        }
+        
+        .resp-sharing-button--facebook:hover {
+            background-color: #2d4373
+        }
+        
+        .resp-sharing-button--tumblr {
+            background-color: #35465C
+        }
+        
+        .resp-sharing-button--tumblr:hover {
+            background-color: #222d3c
+        }
+        
+        .resp-sharing-button--reddit {
+            background-color: #5f99cf
+        }
+        
+        .resp-sharing-button--reddit:hover {
+            background-color: #3a80c1
+        }
+        
+        .resp-sharing-button--google {
+            background-color: #dd4b39
+        }
+        
+        .resp-sharing-button--google:hover {
+            background-color: #c23321
+        }
+        
+        .resp-sharing-button--linkedin {
+            background-color: #0077b5
+        }
+        
+        .resp-sharing-button--linkedin:hover {
+            background-color: #046293
+        }
+        
+        .resp-sharing-button--email {
+            background-color: #777
+        }
+        
+        .resp-sharing-button--email:hover {
+            background-color: #5e5e5e
+        }
+        
+        .resp-sharing-button--xing {
+            background-color: #1a7576
+        }
+        
+        .resp-sharing-button--xing:hover {
+            background-color: #114c4c
+        }
+        
+        .resp-sharing-button--whatsapp {
+            background-color: #25D366
+        }
+        
+        .resp-sharing-button--whatsapp:hover {
+            background-color: #1da851
+        }
+        
+        .resp-sharing-button--hackernews {
+            background-color: #FF6600
+        }
+        
+        .resp-sharing-button--hackernews:hover,
+        .resp-sharing-button--hackernews:focus {
+            background-color: #FB6200
+        }
+        
+        .resp-sharing-button--vk {
+            background-color: #507299
+        }
+        
+        .resp-sharing-button--vk:hover {
+            background-color: #43648c
+        }
+        
+        .resp-sharing-button--facebook {
+            background-color: #3b5998;
+            border-color: #3b5998;
+        }
+        
+        .resp-sharing-button--facebook:hover,
+        .resp-sharing-button--facebook:active {
+            background-color: #2d4373;
+            border-color: #2d4373;
+        }
+        
+        .resp-sharing-button--twitter {
+            background-color: #55acee;
+            border-color: #55acee;
+        }
+        
+        .resp-sharing-button--twitter:hover,
+        .resp-sharing-button--twitter:active {
+            background-color: #2795e9;
+            border-color: #2795e9;
+        }
+        
+        .resp-sharing-button--google {
+            background-color: #dd4b39;
+            border-color: #dd4b39;
+        }
+        
+        .resp-sharing-button--google:hover,
+        .resp-sharing-button--google:active {
+            background-color: #c23321;
+            border-color: #c23321;
+        }
+        
+        .resp-sharing-button--tumblr {
+            background-color: #35465C;
+            border-color: #35465C;
+        }
+        
+        .resp-sharing-button--tumblr:hover,
+        .resp-sharing-button--tumblr:active {
+            background-color: #222d3c;
+            border-color: #222d3c;
+        }
+        
+        .resp-sharing-button--email {
+            background-color: #777777;
+            border-color: #777777;
+        }
+        
+        .resp-sharing-button--email:hover,
+        .resp-sharing-button--email:active {
+            background-color: #5e5e5e;
+            border-color: #5e5e5e;
+        }
+        
+        .resp-sharing-button--pinterest {
+            background-color: #bd081c;
+            border-color: #bd081c;
+        }
+        
+        .resp-sharing-button--pinterest:hover,
+        .resp-sharing-button--pinterest:active {
+            background-color: #8c0615;
+            border-color: #8c0615;
+        }
+        
+        .resp-sharing-button--whatsapp {
+            background-color: #25D366;
+            border-color: #25D366;
+        }
+        
+        .resp-sharing-button--whatsapp:hover,
+        .resp-sharing-button--whatsapp:active {
+            background-color: #1DA851;
+            border-color: #1DA851;
+        }
     </style>
 
     <!-- Bootstrap -->
@@ -66,104 +285,212 @@
 <body>
 
     <nav class="navbar navbar-default">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <a class="navbar-brand" href="http://www.forsale.id">ForSale.id</a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4" style="height: 500px; overflow-y: scroll;">
-				<form>
-				<fieldset class="border">
-				<legend class="border">Nama</legend>
-                <div class="form-group">
-                    <label>Pria</label>
-                        <input class="form-control" type="text" id="banner_1" placeholder="Wida" />
-                    <p class="help-block">Contoh: Wida</p>
-                </div>
-                <div class="form-group">
-                    <label>Wanita</label>
-                        <input class="form-control" type="text" id="banner_1A" placeholder="Ninik" />
-                    <p class="help-block">Contoh: Ninik</p>
-                </div>
-				</fieldset>
-				<fieldset class="border">
-				<legend class="border">Akad</legend>
-                <div class="form-group">
-                    <label>Hari</label>
-                        <input class="form-control" type="text" id="banner_2" placeholder="Sabtu" />
-                    <p class="help-block">Contoh: Sabtu</p>
-                </div>
-				<div class="form-group">
-                    <label>Tanggal</label>
-                        <input class="form-control" type="text" id="banner_3" placeholder="26 Agustus 2017" />
-                    <p class="help-block">Contoh: 26 Agustus 2017</p>
-                </div>
-				<div class="form-group">
-                    <label>Pukul</label>
-                        <input class="form-control" type="text" id="banner_4" placeholder="10.00 - SELESAI" />
-                    <p class="help-block">Contoh: 10.00 - SELESAI</p>
-                </div>
-                <div class="form-group">
-                    <label>Lokasi Resepsi</label>
-                        <textarea class="form-control" placeholder="Textarea" id="banner_5"></textarea>
-                    <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
-                </div>
-				</fieldset>
-				<fieldset class="border">
-				<legend class="border">Resepsi</legend>
-                <div class="form-group">
-                    <label>Hari</label>
-                        <input class="form-control" type="text" id="banner_6" placeholder="Sabtu" />
-                    <p class="help-block">Contoh: Sabtu</p>
-                </div>
-				<div class="form-group">
-                    <label>Tanggal</label>
-                        <input class="form-control" type="text" id="banner_7" placeholder="26 Agustus 2017" />
-                    <p class="help-block">Contoh: 26 Agustus 2017</p>
-                </div>
-				<div class="form-group">
-                    <label>Pukul</label>
-                        <input class="form-control" type="text" id="banner_8" placeholder="10.00 - SELESAI" />
-                    <p class="help-block">Contoh: 10.00 - SELESAI</p>
-                </div>
-                <div class="form-group">
-                    <label>Lokasi Resepsi</label>
-                        <textarea class="form-control" placeholder="Textarea" id="banner_9"></textarea>
-                    <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99, Surabaya</p>
-                </div>
-				</fieldset>
-				<fieldset class="border">
-				<legend class="border">Submit</legend>
-				<button type="button" class="btn btn-success" id="preview">Apply Text</button>
-				<a id="download">
-				<button type="button" class="btn btn-primary">Download</button></a>
-				</fieldset>
-				</form>
+            <div class="col-lg-3 col-md-4" style="height: 500px; overflow-y: scroll;">
+                <form>
+                    <fieldset class="border">
+                        <legend class="border">Judul</legend>
+                        <div class="form-group">
+                            <label>Heading</label>
+                            <input class="form-control" type="text" id="banner_0" placeholder="The" />
+                            <p class="help-block">Contoh: The</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Sub Heading</label>
+                            <input class="form-control" type="text" id="banner_0A" placeholder="Wedding" />
+                            <p class="help-block">Contoh: Wedding</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="border">
+                        <legend class="border">Nama Mempelai</legend>
+                        <div class="form-group">
+                            <label>Pria</label>
+                            <input class="form-control" type="text" id="banner_1" placeholder="Wida" />
+                            <p class="help-block">Contoh: Wida</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Wanita</label>
+                            <input class="form-control" type="text" id="banner_1A" placeholder="Ninik" />
+                            <p class="help-block">Contoh: Ninik</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="border">
+                        <legend class="border">Akad</legend>
+                        <div class="form-group">
+                            <label>Akad</label>
+                            <input class="form-control" type="text" id="banner_A2" placeholder="Akad" />
+                            <p class="help-block">Contoh: Akad</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Hari</label>
+                            <input class="form-control" type="text" id="banner_2" placeholder="Sabtu" />
+                            <p class="help-block">Contoh: Sabtu</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Tanggal</label>
+                            <input class="form-control" type="text" id="banner_3" placeholder="26 Agustus 2017" />
+                            <p class="help-block">Contoh: 26 Agustus 2017</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Pukul</label>
+                            <input class="form-control" type="text" id="banner_4" placeholder="10.00 - SELESAI" />
+                            <p class="help-block">Contoh: 10.00 - SELESAI</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Lokasi Resepsi</label>
+                            <textarea class="form-control" placeholder="Textarea" id="banner_5"></textarea>
+                            <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Kota/Kabupaten</label>
+                            <textarea class="form-control" placeholder="Textarea" id="banner_5A"></textarea>
+                            <p class="help-block">Contoh: Gubeng, Surabaya, Jawatimur</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="border">
+                        <legend class="border">Resepsi</legend>
+                        <div class="form-group">
+                            <label>Resepsi</label>
+                            <input class="form-control" type="text" id="banner_A6" placeholder="Resepsi" />
+                            <p class="help-block">Contoh: Resepsi</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Hari</label>
+                            <input class="form-control" type="text" id="banner_6" placeholder="Sabtu" />
+                            <p class="help-block">Contoh: Sabtu</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Tanggal</label>
+                            <input class="form-control" type="text" id="banner_7" placeholder="26 Agustus 2017" />
+                            <p class="help-block">Contoh: 26 Agustus 2017</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Pukul</label>
+                            <input class="form-control" type="text" id="banner_8" placeholder="10.00 - SELESAI" />
+                            <p class="help-block">Contoh: 10.00 - SELESAI</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Alamat</label>
+                            <textarea class="form-control" placeholder="Textarea" id="banner_9"></textarea>
+                            <p class="help-block">Contoh: Gedung Merdeka, Jl. Kebangsaan 99</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Kota/Kabupaten</label>
+                            <textarea class="form-control" placeholder="Textarea" id="banner_9A"></textarea>
+                            <p class="help-block">Contoh: Gubeng, Surabaya, Jawatimur</p>
+                        </div>
+                    </fieldset>
+                    <fieldset class="border">
+                        <legend class="border">Submit</legend>
+                        <button type="button" class="btn btn-success" id="preview">Apply Text</button>
+                        <a id="download">
+                            <button type="button" class="btn btn-primary">Download</button>
+                        </a>
+                    </fieldset>
+                </form>
             </div>
-            <div class="col-md-8">
-                <canvas id="banner_background" height="853px" width="1280px"></canvas>
-                <canvas id="banner" height="853px" width="1280px"></canvas>
+            <div class="col-lg-9 col-md-8">
+                <canvas id="banner_background" height="720px" width="1280px"></canvas>
+                <canvas id="banner" height="720px" width="1280px"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center">Terimakasih telah menggunakan Free undangan digital by <a href="http://forsale.id">forsale.id</a>.
+                    <br /> Jika Anda menyukai nya dan merasa app diatas berguna untuk Anda, tolong share link melalui channel sosial dibawah.</p>
+
+                <div class="text-center">
+                    <!-- Sharingbutton Facebook -->
+                    <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fforsale.id" target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton Twitter -->
+                    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fforsale.id" target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton Google+ -->
+                    <a class="resp-sharing-button__link" href="https://plus.google.com/share?url=http%3A%2F%2Fforsale.id" target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M11.37 12.93c-.73-.52-1.4-1.27-1.4-1.5 0-.43.03-.63.98-1.37 1.23-.97 1.9-2.23 1.9-3.57 0-1.22-.36-2.3-1-3.05h.5c.1 0 .2-.04.28-.1l1.36-.98c.16-.12.23-.34.17-.54-.07-.2-.25-.33-.46-.33H7.6c-.66 0-1.34.12-2 .35-2.23.76-3.78 2.66-3.78 4.6 0 2.76 2.13 4.85 5 4.9-.07.23-.1.45-.1.66 0 .43.1.83.33 1.22h-.08c-2.72 0-5.17 1.34-6.1 3.32-.25.52-.37 1.04-.37 1.56 0 .5.13.98.38 1.44.6 1.04 1.84 1.86 3.55 2.28.87.23 1.82.34 2.8.34.88 0 1.7-.1 2.5-.34 2.4-.7 3.97-2.48 3.97-4.54 0-1.97-.63-3.15-2.33-4.35zm-7.7 4.5c0-1.42 1.8-2.68 3.9-2.68h.05c.45 0 .9.07 1.3.2l.42.28c.96.66 1.6 1.1 1.77 1.8.05.16.07.33.07.5 0 1.8-1.33 2.7-3.96 2.7-1.98 0-3.54-1.23-3.54-2.8zM5.54 3.9c.33-.38.75-.58 1.23-.58h.05c1.35.05 2.64 1.55 2.88 3.35.14 1.02-.08 1.97-.6 2.55-.32.37-.74.56-1.23.56h-.03c-1.32-.04-2.63-1.6-2.87-3.4-.13-1 .08-1.92.58-2.5zM23.5 9.5h-3v-3h-2v3h-3v2h3v3h2v-3h3" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton Pinterest -->
+                    <a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fforsale.id&amp;media=http%3A%2F%2Fforsale.id&amp;description=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking." target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M12.14.5C5.86.5 2.7 5 2.7 8.75c0 2.27.86 4.3 2.7 5.05.3.12.57 0 .66-.33l.27-1.06c.1-.32.06-.44-.2-.73-.52-.62-.86-1.44-.86-2.6 0-3.33 2.5-6.32 6.5-6.32 3.55 0 5.5 2.17 5.5 5.07 0 3.8-1.7 7.02-4.2 7.02-1.37 0-2.4-1.14-2.07-2.54.4-1.68 1.16-3.48 1.16-4.7 0-1.07-.58-1.98-1.78-1.98-1.4 0-2.55 1.47-2.55 3.42 0 1.25.43 2.1.43 2.1l-1.7 7.2c-.5 2.13-.08 4.75-.04 5 .02.17.22.2.3.1.14-.18 1.82-2.26 2.4-4.33.16-.58.93-3.63.93-3.63.45.88 1.8 1.65 3.22 1.65 4.25 0 7.13-3.87 7.13-9.05C20.5 4.15 17.18.5 12.14.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Sharingbutton WhatsApp -->
+                    <a class="resp-sharing-button__link" href="whatsapp://send?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.%20http%3A%2F%2Fforsale.id" target="_blank" aria-label="">
+                        <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
             </div>
         </div>
     </div>
 
     <script>
         //lets set the maximum length for the headline.
-        document.getElementById("banner_1").setAttribute("maxlength", "20");
-        document.getElementById("banner_1A").setAttribute("maxlength", "20");
-        document.getElementById("banner_2").setAttribute("maxlength", "7");
-        document.getElementById("banner_3").setAttribute("maxlength", "17");
-        document.getElementById("banner_4").setAttribute("maxlength", "21");
+        document.getElementById("banner_0").setAttribute("maxlength", "20");
+        document.getElementById("banner_0A").setAttribute("maxlength", "20");
+        document.getElementById("banner_1").setAttribute("maxlength", "30");
+        document.getElementById("banner_1A").setAttribute("maxlength", "30");
+        document.getElementById("banner_A2").setAttribute("maxlength", "45");
+        document.getElementById("banner_2").setAttribute("maxlength", "45");
+        document.getElementById("banner_3").setAttribute("maxlength", "45");
+        document.getElementById("banner_4").setAttribute("maxlength", "45");
         document.getElementById("banner_5").setAttribute("maxlength", "45");
-        document.getElementById("banner_6").setAttribute("maxlength", "7");
-        document.getElementById("banner_7").setAttribute("maxlength", "17");
-        document.getElementById("banner_8").setAttribute("maxlength", "21");
+        document.getElementById("banner_5A").setAttribute("maxlength", "45");
+        document.getElementById("banner_A6").setAttribute("maxlength", "45");
+        document.getElementById("banner_6").setAttribute("maxlength", "45");
+        document.getElementById("banner_7").setAttribute("maxlength", "45");
+        document.getElementById("banner_8").setAttribute("maxlength", "45");
         document.getElementById("banner_9").setAttribute("maxlength", "45");
+        document.getElementById("banner_9A").setAttribute("maxlength", "45");
         //now taking care of the canvases. firstly the background layer;
         var background = document.getElementById("banner_background");
         background_ctx = background.getContext("2d");
@@ -172,34 +499,46 @@
         textLayer_ctx = textLayer.getContext("2d");
         //lets create an image element;
         var backgroundImage = new Image(background.width, background.height);
-        backgroundImage.src = 'vintage-boards-1557993_1280_1.jpg';
+        backgroundImage.src = 'pexels-photo-415334.jpeg';
         //function that generates the banner preview from user input text;
         function previewBanner() {
             background_ctx.clearRect(0, 0, background.width, background.height); //      Clearing both layers
             textLayer_ctx.clearRect(0, 0, textLayer.width, textLayer.height); //           before preview
             background_ctx.drawImage(backgroundImage, 0, 0, background.width, background.height);
             textLayer_ctx.textAlign = "center";
-			textLayer_ctx.fillStyle = "#ffffff";
+            textLayer_ctx.fillStyle = "#ffffff";
+            textLayer_ctx.font = "300 400% Parisienne";
+            textLayer_ctx.fillText(document.getElementById("banner_0").value, textLayer.width / 2, textLayer.height / 9);
+            textLayer_ctx.font = "300 400% Parisienne";
+            textLayer_ctx.fillText(document.getElementById("banner_0A").value, textLayer.width / 2, textLayer.height / 5);
             textLayer_ctx.font = "300 600% Parisienne";
-            textLayer_ctx.fillText(document.getElementById("banner_1").value, textLayer.width / 2.25, textLayer.height / 3.25);
+            textLayer_ctx.fillText(document.getElementById("banner_1").value, textLayer.width / 2.25, textLayer.height / 3.1);
             textLayer_ctx.font = "300 600% Parisienne";
-            textLayer_ctx.fillText(document.getElementById("banner_1A").value, textLayer.width / 1.7, textLayer.height / 2.3);
-            textLayer_ctx.font = "300 500% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_2").value, textLayer.width / 3.5, textLayer.height / 1.55);
+            textLayer_ctx.fillText(document.getElementById("banner_1A").value, textLayer.width / 1.7, textLayer.height / 2.1);
+            textLayer_ctx.font = "300 250% Zilla Slab Highlight";
+            textLayer_ctx.fillText(document.getElementById("banner_A2").value, textLayer.width / 4, textLayer.height / 1.55);
             textLayer_ctx.font = "300 300% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_3").value, textLayer.width / 3.5, textLayer.height / 1.4);
-            textLayer_ctx.font = "300 300% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_4").value, textLayer.width / 3.5, textLayer.height / 1.28);
+            textLayer_ctx.fillText(document.getElementById("banner_2").value, textLayer.width / 4, textLayer.height / 1.35);
             textLayer_ctx.font = "300 200% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_5").value, textLayer.width / 3.5, textLayer.height / 1.2);
-            textLayer_ctx.font = "300 500% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_6").value, textLayer.width / 1.375, textLayer.height / 1.55);
-            textLayer_ctx.font = "300 300% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_7").value, textLayer.width / 1.375, textLayer.height / 1.4);
-            textLayer_ctx.font = "300 300% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_8").value, textLayer.width / 1.375, textLayer.height / 1.28);
+            textLayer_ctx.fillText(document.getElementById("banner_3").value, textLayer.width / 4, textLayer.height / 1.25);
             textLayer_ctx.font = "300 200% Fjalla One";
-            textLayer_ctx.fillText(document.getElementById("banner_9").value, textLayer.width / 1.375, textLayer.height / 1.2);
+            textLayer_ctx.fillText(document.getElementById("banner_4").value, textLayer.width / 4, textLayer.height / 1.165);
+            textLayer_ctx.font = "300 150% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_5").value, textLayer.width / 4, textLayer.height / 1.1);
+            textLayer_ctx.font = "300 150% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_5A").value, textLayer.width / 4, textLayer.height / 1.05);
+            textLayer_ctx.font = "300 250% Zilla Slab Highlight";
+            textLayer_ctx.fillText(document.getElementById("banner_A6").value, textLayer.width / 1.35, textLayer.height / 1.55);
+            textLayer_ctx.font = "300 300% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_6").value, textLayer.width / 1.35, textLayer.height / 1.35);
+            textLayer_ctx.font = "300 200% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_7").value, textLayer.width / 1.35, textLayer.height / 1.25);
+            textLayer_ctx.font = "300 200% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_8").value, textLayer.width / 1.35, textLayer.height / 1.165);
+            textLayer_ctx.font = "300 150% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_9").value, textLayer.width / 1.35, textLayer.height / 1.1);
+            textLayer_ctx.font = "300 150% Fjalla One";
+            textLayer_ctx.fillText(document.getElementById("banner_9A").value, textLayer.width / 1.35, textLayer.height / 1.05);
             //now drwaing the textLayer canvas into the background canvas
             background_ctx.drawImage(textLayer, 0, 0, background.width, background.height);
         }
