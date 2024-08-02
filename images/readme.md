@@ -1,3 +1,0 @@
-thank you
-
-pexels.com
